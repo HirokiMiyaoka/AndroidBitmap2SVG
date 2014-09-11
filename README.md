@@ -8,5 +8,10 @@ This prigram convert Android Bitmap to SVG.
     File output = ...;
     Bitmap input = ...;
     
-    Bitmap2SVG.convert( output, input );
-
+    if ( Bitmap2SVG.convert( output, input ) )
+    {
+        // Success
+    } else
+    {
+        // Failure
+    }
