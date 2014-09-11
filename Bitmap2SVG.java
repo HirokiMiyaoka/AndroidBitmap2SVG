@@ -27,7 +27,7 @@ public class Bitmap2SVG
 		}
 
 		svg.printSVGHeader( input.getWidth(), input.getHeight() );
-		svg.printSVG( input );
+		svg.printSVGBody( input );
 		svg.printSVGFooter();
 
 		return true;
@@ -57,7 +57,7 @@ public class Bitmap2SVG
 		pw.println( "</svg>" );
 		pw.close();
 	}
-	private void printSVG( Bitmap bmp )
+	private void printSVGBody( Bitmap bmp )
 	{
 		int x, y, c, a;
 		w = bmp.getWidth();
